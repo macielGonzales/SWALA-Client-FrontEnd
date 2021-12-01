@@ -6,7 +6,7 @@ const fileUpload = require('express-fileupload')
 const cookieParser = require('cookie-parser')
 
 
-//5:29:00
+//8:34:43
 const app = express()
 app.use(express.json())
 app.use(cookieParser())
@@ -20,7 +20,7 @@ app.use('/usuario', require('./routes/UsuarioRouter'))
 app.use('/api', require('./routes/CategoriaRouter'))
 app.use('/api', require('./routes/upload'))
 app.use('/api', require('./routes/ProductoRouter'))
-// app.use('/api', require('./routes/PagoRouter'))
+app.use('/api', require('./routes/PagoRouter'))
 
 
 
