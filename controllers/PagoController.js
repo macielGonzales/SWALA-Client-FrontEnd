@@ -2,6 +2,7 @@ const Pago = require('../models/Pago')
 const Usuario = require('../models/Usuario')
 const Producto = require('../models/Producto')
 
+
 const pagoController = {
     getPago: async (req, res) => {
         try {
@@ -29,6 +30,6 @@ const pagoController = {
             return res.status(500).json({msg: err.message})
         }
     }
-}
+} 
 
 module.exports = pagoController
