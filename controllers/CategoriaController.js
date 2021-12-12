@@ -8,6 +8,7 @@ const categoriaController = {
     } catch (err) {
       return res.status(500).json({ msg: err.message });
     }
+    //no se que pasa
   },
 
   createCategoria: async (req, res) => {
